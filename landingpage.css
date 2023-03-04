@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("landing\ page.jpg");
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  padding: 0 80px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+}
+.logo {
+  font-size: 15px;
+  letter-spacing: 5px;
+  font-style: italic;
+  padding: 5px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+}
+
+.menu a:nth-child(even) {
+  background-color: black;
+  color: white;
+  border-radius: 0 30px 0 8px;
+}
+.icons {
+  position: absolute;
+  left: 0%;
+
+  rotate: 90;
+}
+.icons i {
+  font-size: 40px;
+  margin: 0 15px;
+  padding: 15px;
+  border-radius: 50%;
+  animation: jump 5s ease infinite;
+}
+
+
+@keyframes jump {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#w {
+  color: greenyellow;
+}
+#insta {
+  color: #c354c7;
+}
+#twi {
+  color: rgb(46, 139, 206);
+}
+#Mail {
+  color: blue;
+}
+#pin {
+  color: brown;
+}
+#icons i:only-child(1) {
+  background: #f368e0;
+  color: white;
+  animation-delay: 1s;
+}
+#icons i:only-child(2) {
+  background: #1dd1a1;
+  color: white;
+  animation-delay: 2s;
+}
+#icons i:only-child(3) {
+  background: #48dbfb;
+  color: white;
+  animation-delay: 3s;
+}
+#icons i:only-child(4) {
+  background: #ff9f43;
+  color: white;
+  animation-delay: 4s;
+}
+@font-face {
+  font-family: VoyageBold;
+  src: url(voyage-bold2.ttf);
+}
+
+#slogan {
+
+  font-family: "Voyagebold";
+  color: rgb(52, 106, 159);
+  position: absolute;
+  top: 23%;
+  left: 17pc;
+  height: 40%;
+  width: 50%;
+  font-size: 4vh;
+  /* inset-inline-start: center; */
+  text-decoration: indianred;
+  
+  animation: slogan 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+
+
+
+
+@keyframes slogan {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
